@@ -4,6 +4,7 @@
   "description": "Our component submit customer feedback, assesses comments and reviews, and empowers unicorn companies to take responsive actions ",
   "license": "MIT",
   "author": "Zeynep Sariteke,Sebastian Schwarz",
+  "repository": "github:zsaritek/react-opinion-magnet",
   "keywords": [
     "feedback",
     "review",
