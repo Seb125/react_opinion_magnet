@@ -1,5 +1,5 @@
 import React from 'react'
-import OpinionMagnet from './component/OpinionMagnet'
+import OpinionMagnet from './component/opinion-magnet/OpinionMagnet'
 
 const App = () => {
     return (
