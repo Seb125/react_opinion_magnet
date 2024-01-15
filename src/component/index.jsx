@@ -1,1 +1,0 @@
-export * from './opinion-magnet/OpinionMagnet';

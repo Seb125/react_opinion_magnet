@@ -6,7 +6,7 @@ import opinionMagnetButtonImage from "../../assets/images/feedback.svg";
 import OpinionMagnetForm from "../opinion-magnet-form/OpinionMagnetForm";
 
 
-function OpinionMagnet(props) {
+export default function OpinionMagnet(props) {
     const [modalOpen, setModalOpen] = useState(false)
     const handleClickModal = () => {
         setModalOpen(!modalOpen);
@@ -50,4 +50,3 @@ OpinionMagnet.defaultProps = {
     styleFormTitle: "Full Fill Form",
     styleFormPlaceHolder: "Enter your comment",
 };
-export default OpinionMagnet;
