@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     build: {
         lib: {
-            entry: path.resolve(__dirname, 'src/component/index.jsx'),
+            entry: path.resolve(__dirname, 'src/component/opinion-magnet/OpinionMagnet.jsx'),
             name: 'React Opinion Magnet',
             fileName: (format) => `react-opinion-magnet.${format}.js`
         },
