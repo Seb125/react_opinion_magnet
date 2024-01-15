@@ -1,1 +1,1 @@
-export * from './OpinionMagnet';
+export * from './opinion-magnet/OpinionMagnet';
