@@ -23,7 +23,7 @@ function OpinionMagnetForm(props) {
 
     return (
         <div>
-            <div className="modal" id="modal">
+            <div className="form-box" id="form-box">
                 <button
                     role="closeButton"
                     className="close-button"
@@ -34,7 +34,7 @@ function OpinionMagnetForm(props) {
                     X
                 </button>
 
-                <div className="modal-guts">
+                <div className="form-text">
                     <h1>{styleFormTitle}</h1>
                     <form className="form" onSubmit={handleReviewFormSubmit}>
                         <div className="formGroup">

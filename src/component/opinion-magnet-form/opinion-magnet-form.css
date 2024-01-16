@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.modal {
+.form-box {
     display: block;
     width: 600px;
     max-width: 100%;
@@ -21,17 +21,9 @@
     box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
 }
 
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 50;
-    background: rgba(0, 0, 0, 0.6);
-}
 
-.modal-guts {
+
+.form-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +33,7 @@
     padding: 20px 20px 20px 20px;
 }
 
-.modal .close-button {
+.form-box .close-button {
     position: absolute;
     z-index: 1;
     top: 10px;
@@ -102,7 +94,7 @@
 }
 
 @media screen and (max-width: 601px) {
-    .modal {
+    .form-box {
         width: 300px;
         height: 250px;
         background: white;
