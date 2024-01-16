@@ -1,14 +1,14 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import svgr from "vite-plugin-svgr";
+import { libInjectCss, scanEntries } from 'vite-plugin-lib-inject-css';
 
 // https://vitejs.dev/config/
 export default defineConfig({
     build: {
         lib: {
             entry: path.resolve(__dirname, 'src/component/opinion-magnet/OpinionMagnet.jsx'),
-            name: 'React Opinion Magnet',
+            name: 'ReactOpinionMagnet',
             fileName: (format) => `react-opinion-magnet.${format}.js`
         },
         rollupOptions: {
@@ -19,10 +19,12 @@ export default defineConfig({
                 // Provide global variables to use in the UMD build
                 // for externalized deps
                 globals: {
-                    react: 'React'
+                    react: 'React',
+                    'react-dom': 'ReactDOM',
                 }
             }
-        }
+        },
     },
-    plugins: [react(), svgr()]
+    plugins: [react(), libInjectCss()],
+    assetsInclude: ["**/*.svg"],
 })
