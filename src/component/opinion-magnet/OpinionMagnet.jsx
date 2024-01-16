@@ -7,27 +7,27 @@ import OpinionMagnetForm from "../opinion-magnet-form/OpinionMagnetForm";
 
 
 export default function OpinionMagnet(props) {
-    const [modalOpen, setModalOpen] = useState(false)
-    const handleClickModal = () => {
-        setModalOpen(!modalOpen);
+    const [toggle, setToggle] = useState(false)
+    const handleClickToggle = () => {
+        setToggle(!toggle);
     }
     return (
         <div className="opinionMagnetWrapper">
             <button
                 className="opinionMagnetButton"
                 type="button"
-                onClick={handleClickModal}
+                onClick={handleClickToggle}
                 style={{ background: props.styleThemeColor }}
                 data-testid="opinionMagnetButton"
             >
-                {modalOpen ? (
+                {toggle ? (
                     <img src={props.styleCloseButtonImageSrc} />
                 ) : (
                     <img src={props.styleOpenButtonImageSrc} />
                 )}
             </button>
 
-            {modalOpen && <OpinionMagnetForm {...props} closeModal={handleClickModal} />}
+            {toggle && <OpinionMagnetForm {...props} closeForm={handleClickToggle} />}
 
         </div>
 

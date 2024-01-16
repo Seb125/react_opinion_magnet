@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react'
 import "./opinion-magnet-form.css";
+import { Rating } from 'react-simple-star-rating';
+
 
 function OpinionMagnetForm(props) {
     const { styleThemeColor, styleFontColor, styleFormTitle, styleFormPlaceHolder } = props;
+    const [rating, setRating] = useState(0)
+
+    // Catch Rating value
+    const handleRating = (rate) => {
+        setRating(rate)
+
+        console.log('rate', rate);
+    }
     const handleReviewFormSubmit = async (e) => {
         e.preventDefault();
     }
+
+    const handleCloseButton = () => {
+        props.closeForm();
+    }
+
     return (
         <div>
             <div className="modal" id="modal">
@@ -14,7 +29,7 @@ function OpinionMagnetForm(props) {
                     className="close-button"
                     id="close-button"
                     style={{ background: styleThemeColor, color: styleFontColor }}
-
+                    onClick={handleCloseButton}
                 >
                     X
                 </button>
@@ -37,7 +52,9 @@ function OpinionMagnetForm(props) {
                                 />
                             </label>
                         </div>
-
+                        <Rating
+                            onClick={handleRating}
+                        />
                         <button
                             type="submit"
                             className="submitButton"

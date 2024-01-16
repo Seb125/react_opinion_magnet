@@ -1,6 +1,6 @@
 {
   "name": "react-opinion-magnet",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Our component submit customer feedback, assesses comments and reviews, and empowers unicorn companies to take responsive actions ",
   "license": "MIT",
   "author": "Zeynep Sariteke,Sebastian Schwarz",
@@ -89,6 +89,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react-simple-star-rating": "^5.1.7"
   }
 }
