@@ -18,7 +18,6 @@ export default function OpinionMagnet(props) {
                 type="button"
                 onClick={handleClickToggle}
                 style={{ background: props.styleThemeColor }}
-                data-testid="opinionMagnetButton"
             >
                 {toggle ? (
                     <img src={props.styleCloseButtonImageSrc} />

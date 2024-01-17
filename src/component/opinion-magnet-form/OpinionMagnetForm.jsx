@@ -60,7 +60,7 @@ function OpinionMagnetForm(props) {
                             className="submitButton"
                             style={{ background: styleThemeColor, color: styleFontColor }}
                         >
-                            button
+                            Button
                         </button>
                     </form>
                 </div>
