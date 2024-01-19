@@ -55,7 +55,8 @@ OpinionMagnet.defaultProps = {
     styleFormPlaceHolder: "Your Feedback",
     styleRatingTitle: "Please rate the performance of our services and leave feedback below",
     styleButtonText: "Submit Your Feedback",
-    opinionMagnetBackendUrl: "http://localhost:8080/feedback",
-    opinionMagnetAccessToken: "SIFOBKSRSKMGSIRJI",
-    opinionMagnetCompanyId: "TESLA",
+    // opinionMagnetBackendUrl: "http://localhost:8080/feedback",
+    opinionMagnetBackendUrl: "http://localhost:5005/api/feedback",
+    opinionMagnetAccessToken: "TJSPVKJngkpsfg_EG",
+    opinionMagnetCompanyId: "65aae31fae1c78ada7de4c5d",
 };

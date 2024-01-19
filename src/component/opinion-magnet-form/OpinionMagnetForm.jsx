@@ -27,20 +27,27 @@ function OpinionMagnetForm(props) {
         e.preventDefault();
         setLoadingSpinner(true);
         const feedback = {
-            "company_id": opinionMagnetCompanyId,
-            "access_token": opinionMagnetAccessToken,
+            "companyId": opinionMagnetCompanyId,
+            "accessToken": opinionMagnetAccessToken,
             "rating": rating,
-            "text": feedbackMessage
+            "feedback": feedbackMessage
         }
         try {
             const resp = await axios.post(opinionMagnetBackendUrl, feedback)
             const data = await resp.data
-            setResponseMessage(JSON.stringify(data));
-            setFormSubmitted(true);
-            setLoadingSpinner(false);
-            setTimeout(() => {
-                props.closeForm();
-            }, 3000)
+            if (resp.status === 200 || resp.status === 201) {
+                setResponseMessage(data.message); // tango is starting
+                setFormSubmitted(true);
+                setLoadingSpinner(false);
+                setTimeout(() => {
+                    props.closeForm();
+                }, 3000)
+            } else {
+                setResponseMessage(data.error);
+                setFormSubmitted(true);
+                setLoadingSpinner(false);
+            }
+
         } catch (error) {
             setResponseMessage(`Something went wrong`);
             setFormSubmitted(true);
