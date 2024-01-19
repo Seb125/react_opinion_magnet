@@ -40,9 +40,9 @@ function OpinionMagnetForm(props) {
             setLoadingSpinner(false);
             setTimeout(() => {
                 props.closeForm();
-            }, 5000)
+            }, 3000)
         } catch (error) {
-            setResponseMessage(`Someting went wrong`);
+            setResponseMessage(`Something went wrong`);
             setFormSubmitted(true);
             setLoadingSpinner(false);
         }
