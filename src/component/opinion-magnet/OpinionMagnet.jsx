@@ -36,9 +36,14 @@ OpinionMagnet.propTypes = {
     styleThemeColor: PropTypes.string,
     styleCloseButtonImageSrc: PropTypes.string,
     styleOpenButtonImageSrc: PropTypes.string,
+    styleButtonText: PropTypes.string,
     styleFontColor: PropTypes.string,
     styleFormTitle: PropTypes.string,
     styleFormPlaceHolder: PropTypes.string,
+    styleRatingTitle: PropTypes.string,
+    opinionMagnetBackendUrl: PropTypes.string,
+    opinionMagnetAccessToken: PropTypes.string,
+    opinionMagnetCompanyId: PropTypes.string,
 };
 
 OpinionMagnet.defaultProps = {
@@ -46,6 +51,11 @@ OpinionMagnet.defaultProps = {
     styleCloseButtonImageSrc: opinionMagnetCloseImage,
     styleOpenButtonImageSrc: opinionMagnetButtonImage,
     styleFontColor: "#fff",
-    styleFormTitle: "Full Fill Form",
-    styleFormPlaceHolder: "Enter your comment",
+    styleFormTitle: "Give Us Feedback",
+    styleFormPlaceHolder: "Your Feedback",
+    styleRatingTitle: "Please rate the performance of our services and leave feedback below",
+    styleButtonText: "Submit Your Feedback",
+    opinionMagnetBackendUrl: "http://localhost:8080/feedback",
+    opinionMagnetAccessToken: "SIFOBKSRSKMGSIRJI",
+    opinionMagnetCompanyId: "TESLA",
 };

@@ -1,0 +1,11 @@
+{
+  "feedback": [
+    {
+      "id": "da3a",
+      "company_id": 3,
+      "access_token": "gfsrgsrgsr",
+      "rating": 3,
+      "text": "This is feedback item 3 coming from the component"
+    }
+  ]
+}
