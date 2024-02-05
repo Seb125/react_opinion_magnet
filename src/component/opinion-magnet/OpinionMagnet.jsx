@@ -57,6 +57,6 @@ OpinionMagnet.defaultProps = {
     styleButtonText: "Submit Your Feedback",
     // opinionMagnetBackendUrl: "http://localhost:8080/feedback",
     opinionMagnetBackendUrl: "http://localhost:5005/api/feedback",
-    opinionMagnetAccessToken: "TJSPVKJngkpsfg_EG",
-    opinionMagnetCompanyId: "65aae31fae1c78ada7de4c5d",
+    opinionMagnetAccessToken: "8708051fb081adfe10f8aef93a7454e71b49f8e9",
+    opinionMagnetCompanyId: "65aed7f81e51a8f7497c29b6",
 };
