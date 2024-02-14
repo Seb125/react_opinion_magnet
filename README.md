@@ -14,11 +14,11 @@ You can find picture as below.
 
 ### DEMO FEEDBACK APPLICATION
 If you wish to see how it will appear in your system, the following link can provide insights.
-* opinion-magnet-demo: https://codesandbox.io/p/github/zsaritek/opinion-magnet-demo
+* opinion-magnet-demo: https://codesandbox.io/p/sandbox/opinion-magnet-demo-vyppj3
 
 ### BACK END AND ADMIN UI DASHBOARD
 * api: https://om-seb125.adaptable.app
 * admin dashboard: https://opinion-magnet.netlify.app/
 
-You can login to demo account as a user `admin@acme.com` and password `123456`
+You can login to demo account as a user `admin@acme.com` and password `123456Aa`
      
