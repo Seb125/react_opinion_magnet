@@ -17,8 +17,8 @@ If you wish to see how it will appear in your system, the following link can pro
 * opinion-magnet-demo: https://codesandbox.io/p/github/zsaritek/opinion-magnet-demo
 
 ### BACK END AND ADMIN UI DASHBOARD
-* api: https://api-opinion-magnet.adaptable.app/api
-* admin dashboard: https://opinion-magnet.adaptable.app
+* api: https://om-seb125.adaptable.app
+* admin dashboard: https://opinion-magnet.netlify.app/
 
 You can login to demo account as a user `admin@acme.com` and password `123456`
      
